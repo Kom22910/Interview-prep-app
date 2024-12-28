@@ -511,7 +511,7 @@ const CssPage = () => {
 
 
       <div className="container-fluid p-0 html pt-sm-5 pt-3">
-                <h3 className='text-center fw-bold' >HTML Questions & Answer</h3>
+                <h3 className='text-center fw-bold' >CSS Questions & Answer</h3>
 
                 <div className="row">
 
