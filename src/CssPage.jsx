@@ -510,51 +510,52 @@ const CssPage = () => {
 
 
 
-      <div className="container-fluid p-0 pt-5 html">
+      <div className="container-fluid p-0 html pt-sm-5 pt-3">
+                <h3 className='text-center fw-bold' >HTML Questions & Answer</h3>
 
-        <h3 className='text-center fw-bold' >CSS Questions & Answer</h3>
+                <div className="row">
 
-        <div className="row">
+                    <div className="col-10 m-auto mt-sm-5 mt-4">
+                        <div className="row">
 
-          <div className="col-10 m-auto mt-5">
-            <div className="row">
+                            {/* first card */}
 
-              {/* first card */}
-
-              {
-                QA.map((val) => {
-
-                  return (
-                    <div className="col-12 card1 mb-5" key={val.id} onClick={() => activeQuestion(val.id)}>
-
-                      <div className="col-11 m-auto" >
-                        <h4 className='text-center py-3'>{val.question}</h4>
-
-                        {
-                          active === val.id &&
-                          <ul className='col-10 m-auto py-3 pb-5'>
                             {
-                              val.answer.map((v, index) => {
-                                return (
-                                  <li key={index}>{v}</li>
-                                )
-                              })
+                                QA.map((val) => {
+
+                                    return (
+                                        <div className="col-12 card1 mb-5" key={val.id} onClick={() => activeQuestion(val.id)}>
+
+                                            <div className="col-11 m-auto" >
+                                                <h4 className='text-center py-3'>{val.question}</h4>
+
+                                                {
+                                                    active === val.id &&
+                                                    <ul className='col-sm-10 col-12 m-auto py-3 pb-sm-5'>
+                                                        {
+                                                            val.answer.map((v, index) => {
+                                                                return (
+                                                                    <li key={index}>{v}</li>
+                                                                )
+                                                            })
+                                                        }
+                                                    </ul>
+
+                                                }
+
+                                            </div>
+
+                                        </div>
+                                    )
+                                })
                             }
-                          </ul>
-
-                        }
-
-                      </div>
-
+                        </div>
                     </div>
-                  )
-                })
-              }
-            </div>
-          </div>
 
-        </div>
-      </div>
+
+                </div>
+
+            </div>
 
 
     </StrictMode>

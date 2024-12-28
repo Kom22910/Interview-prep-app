@@ -279,12 +279,12 @@ const MongoDB = () => {
 
             {/* <Navbar /> */}
 
-            <div className="container-fluid p-0 html pt-5">
+            <div className="container-fluid p-0 html pt-sm-5 pt-3">
                 <h3 className='text-center fw-bold' >HTML Questions & Answer</h3>
 
                 <div className="row">
 
-                    <div className="col-10 m-auto mt-5">
+                    <div className="col-10 m-auto mt-sm-5 mt-4">
                         <div className="row">
 
                             {/* first card */}
@@ -300,7 +300,7 @@ const MongoDB = () => {
 
                                                 {
                                                     active === val.id &&
-                                                    <ul className='col-10 m-auto py-3 pb-5'>
+                                                    <ul className='col-sm-10 col-12 m-auto py-3 pb-sm-5'>
                                                         {
                                                             val.answer.map((v, index) => {
                                                                 return (
