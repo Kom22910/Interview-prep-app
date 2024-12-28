@@ -9,26 +9,26 @@ const Navbar = () => {
         <StrictMode>
 
             <div className="col-12 py-3 NavbarPage">
-                <div className="col-8 m-auto py-4">
+                <div className="col-sm-8 col-11 m-auto py-4">
                     <div className="row">
 
                         {/* first row */}
-                        <div className="col-2 ms-auto">
+                        <div className="col-sm-2 col-3 ms-auto">
                             <button className='btn  w-100 fw-bold'>HTML</button>
                         </div>
 
                         {/* second row */}
-                        <div className="col-2">
+                        <div className="col-sm-2 col-3">
                             <button className='btn  w-100 fw-bold'>CSS</button>
                         </div>
 
                         {/* third row */}
-                        <div className="col-2">
+                        <div className="col-sm-2 col-3">
                             <button className='btn w-100 fw-bold'>Javascript</button>
                         </div>
 
                         {/* fourth row */}
-                        <div className="col-2 me-auto">
+                        <div className="col-sm-2 col-3 me-auto">
                             <button className='btn w-100 fw-bold'>React</button>
                         </div>
 

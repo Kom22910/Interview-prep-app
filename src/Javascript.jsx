@@ -467,7 +467,7 @@ const Javascript = () => {
     return (
         <StrictMode>
 
-            <Navbar />
+            {/* <Navbar /> */}
 
             <div className="container-fluid p-0 html pt-5">
                 <h3 className='text-center fw-bold' >Javascript Questions & Answer</h3>

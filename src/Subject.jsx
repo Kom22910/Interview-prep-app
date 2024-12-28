@@ -17,7 +17,7 @@ const Subject = () => {
 
                 <div className="row">
 
-                    <div className="col-8 m-auto py-5 px-4 mt-4 box-container">
+                    <div className="col-sm-8 col-12 m-auto py-sm-5 py-1 px-4 mt-4 box-container">
                         <div className="row">
 
                             {/* subject 1 */}

@@ -277,7 +277,7 @@ const MongoDB = () => {
     return (
         <StrictMode>
 
-            <Navbar />
+            {/* <Navbar /> */}
 
             <div className="container-fluid p-0 html pt-5">
                 <h3 className='text-center fw-bold' >HTML Questions & Answer</h3>

@@ -506,7 +506,7 @@ const CssPage = () => {
   return (
     <StrictMode>
 
-      <Navbar />
+      {/* <Navbar /> */}
 
 
 
