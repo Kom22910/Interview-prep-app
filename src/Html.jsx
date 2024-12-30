@@ -358,7 +358,7 @@ const Html = () => {
     const [active, setDeactive] = useState(null);
 
     const activeQuestion = (id) => {
-        setDeactive( id === active ? null : id);
+        setDeactive(id === active ? null : id);
     }
 
 
@@ -368,7 +368,9 @@ const Html = () => {
             {/* <Navbar/> */}
 
             <div className="container-fluid p-0 html pt-sm-5 pt-3">
-                <h3 className='text-center fw-bold' >HTML Questions & Answer</h3>
+                <div className="col-5 m-auto">
+                    <h3 className='text-center fw-bold ' >HTML Questions & Answer</h3>
+                </div>
 
                 <div className="row">
 
