@@ -88,8 +88,8 @@
     ul {
       margin-top: 3%;
       /* color: rgb(255, 1, 153); */
-      color: #666666   ;
-      text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.096);
+      color: 666666 ;
+      text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.036);
 
       font-size: 18px;
       font-weight: 600;

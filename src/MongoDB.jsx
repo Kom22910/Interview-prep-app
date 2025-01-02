@@ -20,9 +20,9 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 2,
-            question : " Who created MongoDB ?",
-            answer : [
+            id: 2,
+            question: " Who created MongoDB ?",
+            answer: [
                 " - 10 Gen was original name of MongoDB",
                 " - It is founded in 2007 by Eliot Horowitz & Dwight Marrinam",
                 " - In 2013 10 Gen rebranded itself as MongoDB, Inc.",
@@ -30,9 +30,9 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 3,
-            question : "Difference between MYSQL vs NoSQL database ?",
-            answer : [
+            id: 3,
+            question: "Difference between MYSQL vs NoSQL database ?",
+            answer: [
                 "1] SQL ==> ",
                 " - SQL Database are relational database",
                 " - They use structured table (row columns ) to store data",
@@ -48,9 +48,9 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 4,
-            question : " What is JSON & BSON ? ",
-            answer : [
+            id: 4,
+            question: " What is JSON & BSON ? ",
+            answer: [
                 " 1] JSON ==> ",
                 " - JavaScript Object Notation",
                 " - It is a  human and machine-readable format for data interchange .",
@@ -63,9 +63,9 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 5 , 
-            question : "Feature of MongoDB ? ",
-            answer : [
+            id: 5,
+            question: "Feature of MongoDB ? ",
+            answer: [
                 " 1] Schema-Less ==> No strict schema definition required upfront.",
                 " 2] Flexible ",
                 " 3] Scalable ",
@@ -74,9 +74,9 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 6 ,
-            question : " Name Restriction for Database in MongoDB ? ",
-            answer : [
+            id: 6,
+            question: " Name Restriction for Database in MongoDB ? ",
+            answer: [
                 " 1] Names of database are case insensitive",
                 " 2] db name cannnot contain any of these character ==> /\. '$*:|?",
                 " 3] db names cannot contain null character or empty ",
@@ -84,9 +84,9 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 7,
-            question : " What Collection  and Name resttriction for collection ? ",
-            answer : [
+            id: 7,
+            question: " What Collection  and Name resttriction for collection ? ",
+            answer: [
                 " 1] Collection ==> ",
                 " - A single db is allowed to store mutliple collections ",
                 " - Collection stores data but in the form of documents",
@@ -97,21 +97,21 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 8,
-            question : " what is document & Name Restriction & _id key?",
-            answer : [
+            id: 8,
+            question: " what is document & Name Restriction & _id key?",
+            answer: [
                 " 1] Document ",
                 " - The document is created using field-value / key-value pairs",
                 " - In MongoDB the data are stored as BSON documents",
                 " 2] Name Restriction of key/field ==>  ",
                 " - name should be string , cannot be null , cannot start with $",
-                " - _id key is reserved use as primay key" 
+                " - _id key is reserved use as primay key"
             ]
         },
         {
-            id : 9,
-            question : " What is _id field/key in Document ? ",
-            answer : [
+            id: 9,
+            question: " What is _id field/key in Document ? ",
+            answer: [
                 " _id Field ==> ",
                 " - when we create collection ,  MongoDB automatically creates _id field",
                 " - It is unique id , immutable and 1st field in every document ",
@@ -120,18 +120,18 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 10 ,
-            question : " How to create Database ? ",
-            answer : [
+            id: 10,
+            question: " How to create Database ? ",
+            answer: [
                 " use database_name ",
                 " - If db name is not exist then it create and switch to it ",
                 " - if db name exist then it switch to it "
             ]
         },
         {
-            id : 11 ,
-            question : "How to list all available databases & collection ",
-            answer : [
+            id: 11,
+            question: "How to list all available databases & collection ",
+            answer: [
                 " mongod -v ==> check latest version of mongodb",
                 " mongosh ==> open mongodb shell ",
                 " show dbs ==> lists all available databases in MongoDB instance",
@@ -139,17 +139,17 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 12 ,
-            question : " How to delete database ? ",
-            answer : [
+            id: 12,
+            question: " How to delete database ? ",
+            answer: [
                 " db.dropDatabase() ==> ",
                 " - Deletes the current Database and all its collections"
             ]
         },
         {
-            id : 13 ,
-            question : " How to create collection & insert one document in Database ?",
-            answer : [
+            id: 13,
+            question: " How to create collection & insert one document in Database ?",
+            answer: [
                 '1] First create collection then insert document ==>',
                 " db.createCollection('collection_name') --> create collection",
                 " db.collection_name.insertOne({'key' : 'value' }) --> insert document in collection ",
@@ -159,25 +159,25 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 14,
-            question : "How to insert only document ?",
-            answer : [
+            id: 14,
+            question: "How to insert only document ?",
+            answer: [
                 "using syntax ==> db.cname.insertOne( { 'key' : 'value '}) ",
                 " it take only one document or object"
             ]
         },
         {
-            id : 15,
-            question : "How to insert many document ?",
-            answer : [
+            id: 15,
+            question: "How to insert many document ?",
+            answer: [
                 "using syntax ==> db.cname.insertMany( [ {'key' : 'value'}, {'k2' : 'v2'} , {} ,  .... ] )",
                 "it takes array object"
             ]
         },
         {
-            id : 16,
-            question : "What does find command do ?",
-            answer : [
+            id: 16,
+            question: "What does find command do ?",
+            answer: [
                 "db.collection.find() ==> retrieves all documents from collection",
                 "db.collection.findOne() ==> only retrive first document ",
                 "If i give condition inside the find(condition) or in findOne(conditon) ==> retrive document only satiesfly condition",
@@ -185,34 +185,34 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 17,
-            question : "How to update value ?",
-            answer : [
+            id: 17,
+            question: "How to update value ?",
+            answer: [
                 "use syntax ==> ",
                 " db.collection.updateOne() ==> update only first document",
-                " db.collection.updateMany() ==> update mutliple document that matches condition",    
+                " db.collection.updateMany() ==> update mutliple document that matches condition",
             ]
         },
         {
-            id : 18,
-            question : "How to delete a document ?",
-            answer : [
+            id: 18,
+            question: "How to delete a document ?",
+            answer: [
                 " use syntax ==>",
                 " db.collection.deleteOne() ==> delete only first document",
                 " db.collection.deleteMany() ==> deletes multiple documents that matches condition"
             ]
         },
         {
-            id : 19 , 
-            question : "How to count document ?",
-            answer : [
+            id: 19,
+            question: "How to count document ?",
+            answer: [
                 " db.collection.countDocuments() ==> counts the number of documents"
             ]
         },
         {
-            id : 20 ,
-            question : " What are comparison query operators ?",
-            answer : [
+            id: 20,
+            question: " What are comparison query operators ?",
+            answer: [
                 "$eq ==> Values are equal",
                 "$ne ==> Values are not equal ",
                 "$gt ==> Value is greater than given value",
@@ -224,19 +224,19 @@ const MongoDB = () => {
             ]
         },
         {
-            id : 21 ,
-            question : " How to comparison operator  in MongoDB & why use ?",
-            answer : [
+            id: 21,
+            question: " How to comparison operator  in MongoDB & why use ?",
+            answer: [
                 "syntax ==> db.collection.find({'age' : {$lt : 20 }})",
-                "We use comparison operator because ==>" ,
+                "We use comparison operator because ==>",
                 "to filter documents based on specific criteria within their fields.",
                 "It allow us to compare the values of fields with specified values, enabling us to retrieve only the relevant data we need."
             ]
         },
         {
-            id : 22 ,
-            question : " Explain Cursor methods in MongoDB ?",
-            answer : [
+            id: 22,
+            question: " Explain Cursor methods in MongoDB ?",
+            answer: [
                 "cursors in mongodb are used to efficiently retrieve large results sets from queries, providing control over the data retrieval process.",
                 "Cursors are basically used to iterate through query results.",
                 " Always written using '.'",
@@ -251,7 +251,88 @@ const MongoDB = () => {
                 " 8] hasNext() ==> Checkes if there are more documents to retrive",
                 " 9} forEach() ==> Iterates over each document and applies a function "
             ]
-        }
+        },
+        {
+            id: 23,
+            question: "What is Logical operators in MongoDB ?",
+            answer: [
+                "Logical query operators are used to combine or modify the results of queries using logical conditions.",
+                "Allow us to create complex queries by combining multiple conditions.",
+                "This enables precise filtering of documents based on various criteria."
+            ]
+        },
+        {
+            id: 24,
+            question: "What are logical Operators ?",
+            answer: [
+                "1] $and ==> Joins query clauses & returns documents that match all conditions",
+                " syntax : {$and :[ {condition1} . {condition2} , ... ]}",
+                " 2] $or ==> returns documents that match aleast one condition",
+                "syntax : {$or :[ {condition1} . {condition2} , ... ]}",
+                "3] $nor ==> Returns documents that fail to match all the conditions.",
+                " syntax : { $nor: [ { condition1 }, { condition2 }, ... ] }",
+                "4] $not ==> Returns documents that do not match the query expression.",
+                " syntax : db.p2.find({'age' : {$not: {$gt : 20}}})"
+            ]
+        },
+        {
+            id: 25,
+            question: " What is Element Operators in MongoDB ?",
+            answer: [
+                "return the documents in the collection which returns true if the keys match the fields and datatypes.",
+            ]
+        },
+        {
+            id: 26,
+            question: "What are Element operators ?",
+            answer: [
+                "1] $exists ==> Checks if a specified field exists in the documents.",
+                "syntax : { field: { $exists: <boolean> } } ",
+                " true => Selects documents where the specified field exists.",
+                " false: Selects documents where the specified field does not exist.",
+                " eg: db.p2.find({'age' : {$exists: true , $eq: 30 }})",
+                "2] $type ==> Verifies the data type of a specified field in the documents.",
+                " syntax : { field: { $type: <BSON type> } }",
+                " data types and there BSON code (use only one) ==>",
+                " ('double' | 1) , ('string' | 2) , ('object' | 3) , (array | 4) , ('binData' | 5) , ('objectId' | 7) , ('bool' | 8) , ('date' | 9) ",
+                " ('null' | 10) , ('JavaScript' | 13) ,('int' | 16) , ('long' | 18) , ('decimal' | 19) ('minKey' | -1) , ('maxKey' | 127)",
+                " eg : db.p2.find( { 'id': { $type: 'int' } })"
+            ]
+        },
+        {
+            id: 27,
+            question: "What is Array Operators in MongoDB ?",
+            answer: [
+                " return the result based on the Multiple conditions specified in the array using the array operators."
+            ]
+        },
+        {
+            id: 28,
+            question: " What are the Array Operators ?",
+            answer: [
+                "1] $all ==> Returns the documents in the collection which have all the elements specified in the array.",
+                " syntax : { field: { $all: [<value1> , <value2>, ... ] } }",
+                " eg :  db.p2.find( { 'color': { $all: ['red' , 'blue'] } })",
+                "2] $elemMatch ==> Returns the documents that match all the conditions in the given array of conditions.",
+                " syntax : { field: { $elemMatch: { <query1>, <query2>, ... } } }",
+                " 3] $size ==>Returns the documents that satisfy the given size mentioned in the query if the field contains an array of specified size. ",
+                "syntax : { field: { $size: value } }",
+                "The $size operator can only be used with array fields.",
+                "Using it with non-array fields will result in an error."
+            ]
+        },
+        {
+            id : 29,
+            question : "What is Projection in MongoDB ?",
+            answer : [
+                " It allows you to select only the necessary data rather than selecting whole data from the document.",
+                " IF the value field set to ==>",
+                " 1] 1 or true => then it means the field will include in the return document.",
+                " 2] 0 or false, then it means the field will not include in the return document.",
+                " it will not affect _id field so no need to set",
+                " eg : db.p2.find({}, {'name': 1} , {'age' : 0} , {'city' : 0})"
+            ]
+        },
 
 
 
