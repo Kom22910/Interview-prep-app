@@ -390,7 +390,7 @@ const Html = () => {
 
                                                 {
                                                     active === val.id &&
-                                                    <ul className='col-sm-10 col-12 m-auto py-sm-3 py-2 pb-5'>
+                                                    <ul className='col-sm-10 col-12 m-auto py-sm-3 py-2'>
                                                         {
                                                             val.answer.map((v, index) => {
                                                                 return (
