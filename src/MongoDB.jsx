@@ -333,7 +333,13 @@ const MongoDB = () => {
                 " eg : db.p2.find({}, {'name': 1} , {'age' : 0} , {'city' : 0})"
             ]
         },
-
+        {
+            id : 30,
+            question : "What is Indexes in MongoDB ?",
+            answer : [
+                ""
+            ]
+        }
 
 
 
@@ -360,12 +366,12 @@ const MongoDB = () => {
 
             {/* <Navbar /> */}
 
-            <div className="container-fluid p-0 html pt-sm-5 pt-3">
+            <div className="container-fluid p-0 html py-sm-5 py-4">
                 <h3 className='text-center fw-bold' >MongoDB Questions & Answer</h3>
 
                 <div className="row">
 
-                    <div className="col-10 m-auto mt-sm-5 mt-4">
+                    <div className="col-10 m-auto mt-5">
                         <div className="row">
 
                             {/* first card */}
@@ -374,10 +380,10 @@ const MongoDB = () => {
                                 QA.map((val) => {
 
                                     return (
-                                        <div className="col-12 card1 mb-5" key={val.id} onClick={() => activeQuestion(val.id)}>
+                                        <div className="col-12 card1 mb-5 py-sm-0 py-3" key={val.id} onClick={() => activeQuestion(val.id)}>
 
                                             <div className="col-11 m-auto" >
-                                                <h4 className='text-center py-3'>{val.question}</h4>
+                                                <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
                                                 {
                                                     active === val.id &&

@@ -367,8 +367,8 @@ const Html = () => {
 
             {/* <Navbar/> */}
 
-            <div className="container-fluid p-0 html pt-sm-5 pt-3">
-                <div className="col-5 m-auto">
+            <div className="container-fluid p-0 html py-sm-5 py-4">
+                <div className="col-10 m-auto">
                     <h3 className='text-center fw-bold ' >HTML Questions & Answer</h3>
                 </div>
 
@@ -383,14 +383,14 @@ const Html = () => {
                                 QA.map((val) => {
 
                                     return (
-                                        <div className="col-12 card1 mb-5" key={val.id} onClick={() => activeQuestion(val.id)}>
+                                        <div className="col-12 card1 mb-5 py-sm-0 py-3" key={val.id} onClick={() => activeQuestion(val.id)}>
 
                                             <div className="col-11 m-auto" >
-                                                <h4 className='text-center py-3'>{val.question}</h4>
+                                                <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
                                                 {
                                                     active === val.id &&
-                                                    <ul className='col-sm-10 col-12 m-auto py-3 pb-sm-5'>
+                                                    <ul className='col-sm-10 col-12 m-auto py-sm-3 py-2 pb-5'>
                                                         {
                                                             val.answer.map((v, index) => {
                                                                 return (

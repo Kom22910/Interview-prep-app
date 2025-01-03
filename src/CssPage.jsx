@@ -510,8 +510,8 @@ const CssPage = () => {
 
 
 
-      <div className="container-fluid p-0 html pt-sm-5 pt-3">
-                <h3 className='text-center fw-bold' >CSS Questions & Answer</h3>
+      <div className="container-fluid p-0 html py-sm-5 py-4">
+                <h3 className='text-center fw-bold ' >CSS Questions & Answer</h3>
 
                 <div className="row">
 
@@ -524,10 +524,10 @@ const CssPage = () => {
                                 QA.map((val) => {
 
                                     return (
-                                        <div className="col-12 card1 mb-5" key={val.id} onClick={() => activeQuestion(val.id)}>
+                                        <div className="col-12 card1 mb-5 py-sm-0 py-3" key={val.id} onClick={() => activeQuestion(val.id)}>
 
                                             <div className="col-11 m-auto" >
-                                                <h4 className='text-center py-3'>{val.question}</h4>
+                                                <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
                                                 {
                                                     active === val.id &&
