@@ -8,6 +8,7 @@ import Subject from './Subject';
 import CssPage from './CssPage';
 import Javascript from './Javascript';
 import MongoDB from './MongoDB';
+import NodeQuestion from './NodeQusetion';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/css' element={<CssPage />} />
           <Route path='/js' element={<Javascript/>} />
           <Route path='/mongodb' element={<MongoDB/>} />
+          <Route path='/node' element={<NodeQuestion/>} />
           
         </Routes>
       </Router>

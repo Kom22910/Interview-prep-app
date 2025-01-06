@@ -11,7 +11,7 @@ const Subject = () => {
         <StrictMode>
 
             <div className="container-fluid subject p-0">
-            
+
                 <h1 className='head1 py-4 text-center'>Subject Preparation for Interview</h1>
 
 
@@ -21,30 +21,35 @@ const Subject = () => {
                         <div className="row">
 
                             {/* subject 1 */}
-                            <div className="col-sm-3 col-5 box" onClick={()=>nav('/html')}>
-                                <h1 className='text-center'>HTML</h1>
+                            <div className="col-sm-3 col-5 box" onClick={() => nav('/html')}>
+                                <img src="asset/html.png" alt="" />
                             </div>
 
 
                             {/* subject 2 */}
-                            <div className="col-sm-3 col-5  box" onClick={()=>nav('/css')}>
-                                <h1 className='text-center'>CSS</h1>
+                            <div className="col-sm-3 col-5  box" onClick={() => nav('/css')}>
+                                <img src="asset/css.png" alt="" />
                             </div>
 
                             {/* subject 3 */}
-                            <div className="col-sm-3  col-5 box" onClick={()=> nav('/js')}>
-                                <h1 className='text-center'>Javascript</h1>
+                            <div className="col-sm-3  col-5 box" onClick={() => nav('/js')}>
+                                <img src="asset/javascript.png" alt="" />
                             </div>
 
                             {/* subject 4 */}
                             <div className=" col-sm-3  col-5 box">
-                                <h1 className='text-center'>React</h1>
+                                <img src="asset/react.png" alt="" />
                             </div>
 
 
                             {/* subject 5 */}
-                            <div className=" col-sm-3 col-5 box" onClick={()=> nav('/mongodb')}>
-                                <h1 className='text-center'>MongoDB</h1>
+                            <div className=" col-sm-3 col-5 box" onClick={() => nav('/mongodb')}>
+                                <img src="asset/mongo.png" alt="" className='d-block w-25' />
+                            </div>
+
+                            {/* subject 6 */}
+                            <div className=" col-sm-3 col-5 box" onClick={() => nav('/node')}>
+                                <img src="asset/node.png" alt="" className='d-block w-25' />
                             </div>
 
                         </div>
@@ -55,7 +60,7 @@ const Subject = () => {
 
             </div>
 
-        <Outlet/>
+            <Outlet />
 
 
         </StrictMode>

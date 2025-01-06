@@ -2,7 +2,6 @@
 
 
 import React, { StrictMode, useState } from 'react'
-import Navbar from './Navbar'
 
 const MongoDB = () => {
 
@@ -337,7 +336,91 @@ const MongoDB = () => {
             id : 30,
             question : "What is Indexes in MongoDB ?",
             answer : [
-                ""
+                "An index in MongoDB is a special data structure that stores a portion of the data set in an easy-to-traverse form.",
+                "Indexes are used to efficiently query and retrieve documents from a collection by providing quick access to the data based on the indexed fields.",
+                " Without indexing, MongoDB must scan every document in a collection to retrieve the matching documents and leading to slower query performance.",
+                "_id_ id by default index which does not permit the deletion of it "
+            ]
+        },
+        {
+            id : 31,
+            question : "Create Index and delete index command in MongoDB ?",
+            answer : [
+                "1] createIndex({key : 1}) ==> create Indexes",
+                " Here key means field name , 1 -> ascending order & -1 -> descending order",
+                "eg :  db.p3.createIndex({'character' : 1})",
+                "2] getIndexes() ==> return a list of all the indexes defined on the collection.",
+                "eg :  db.p3.getIndexes()",
+                "3] dropIndex( ' indexName ') ==> method allows for the removal of specified indexes from a collection",
+                "eg : db.p3.dropIndex('series_1')"
+            ]
+        },
+        {
+            id : 32,
+            question : "How to Sort the Document ?",
+            answer : [
+                "Sorting documents in MongoDB refers to the process of arranging the documents in a specified order based on the values of one or more fields.",
+                " .sort({'field' : 1 or -1}) -> here (1 is ascending order) (-1 is descending order) ",
+                "eg : db.p3.find().sort({'name' : -1})"
+            ]
+        },
+        {
+            id : 33,
+            question : "What is Aggregation in MongoDB ?",
+            answer : [
+                "Aggregation is process of db that allows us to perform complex data transformations and computations on collections of documents.",
+                "It enables us to group, filter, and manipulate data to produce summarized results",
+                "It is typically carried out using the aggregation pipeline",
+                "Pipline ==> framework for data aggregation modeled , Each stage of the pipeline transforms the documents ",
+                "It  allows for operations like filtering, grouping, sorting, reshaping and performing calculations on the data."
+            ]
+        },
+        {
+            id : 34,
+            question : "How to use aggregate and its operations ?",
+            answer : [
+                "aggregate() ==> used for aggregation ",
+                "1] $group ==> It Groups documents by the field/key",
+                "syntax : db.collection.aggregate( [ {$group : {_id : '$fieldName'} } ] )   here $field represent as a iterative by which grp/category will form",
+                "eg : db.p3.aggregate([ {$group : {'_id' : '$name' , 'Total' : {$sum : 1} }}])",
+                "2] $project ==>  Include or exclude fields from the output documents",
+                " syntax : db.collection.aggregate([ {$project : {'field' : 0/1 ,.. }} ])  here (0 - exclude / 1- include)",
+                "eg : db.p3.aggregate( [{ $project: { 'name': 1 , 'character' : 1 } }] )",
+                "3] $match ==> Filter documents to pass only those that match the specified condition(s).",
+                "syntax : db.collection.aggregate( [ {$match : { condition1 , condition2}} ] )",
+                "eg : db.p3.aggregate( [{ $match: {'character' : 'Main' }}])",
+                "4] $sort ==> It Order the documents.",
+                "syntax : db.collection.aggregate( [ {$sort : {'field' : 1|-1 } } ] )",
+                "eg : db.p3.aggregate([ {$sort : {'character' : 1 } } ])",
+                "5] $limit ==> Limit the number of documents passed to the next stage.",
+                "syntax : db.collection.aggregate( [ {$limit : 1|2|3|4|etc }])    (0 & negatives num is not allow)",
+                "eg : db.p3.aggregate( [{ $limit: 1 }] )"
+            ]
+        },
+        {
+            id : 35,
+            question : "How to check Data type in MongoDB ?",
+            answer : [
+                "$type ==> selects documents where the value of the field is an instance of the specified BSON data type(s).",
+                "syntax : { 'field' : {$type : BSON TYPE }}",
+                "eg : db.p4.find({'num1': {$type : 16/'int' }})"
+            ]
+        },
+        {
+            id : 36,
+            question : "What are the Arthimetic operator ?",
+            answer : [
+                "1] $add ==>  used to add numbers together or concatenate numbers and dates in the aggregation pipeline.",
+                "syntax : {$add : [ '$field' , 'expression' , 'etc' ] } ",
+                "eg : db.p4.aggregate([ { $project: { 'add': { $add: ['$num1', '$num2'] } } }] )",
+                "2] $subtract ==> allows users to perform subtraction operations on numbers or dates.",
+                "syntax : {$subtract : ['$field' , expressions ]}",
+                "eg :  db.p4.aggregate([ { $project: { 'Sub': { $subtract: ['$num1', '$num2'] } } }] )",
+                "3] $multiply ==> used in aggregation pipelines to perform multiplication operations",
+                "syntax : {$multiply : ['$field' , expressions ]}",
+                "eg 1 :  db.p4.aggregate([ { $project: { '3 * 4:'': { $multiply: [4, 3] } } }] ) " ,
+                "eg 2 :  db.p4.aggregate([ { $project: { 'Num1 * 3:'': { $multiply: ['$num1', 3] } } }] )",
+                "4] $"
             ]
         }
 
