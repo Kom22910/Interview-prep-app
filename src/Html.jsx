@@ -16,7 +16,7 @@ const Html = () => {
                 "#  It was developed by Tim Berners-Lee",
                 "#  The markup language is used to define the text document within the tag which defines the structure of web pages",
                 "#  HTML is used to structure the website and is therefore used for Web Development"
-            ]
+            ],
         },
         {
             id: 2,
@@ -348,18 +348,24 @@ const Html = () => {
                 "3] Ogg"
             ]
         }
-
-
-
-
-
     ]
 
-    const [active, setDeactive] = useState(null);
+    const [open, setClose] = useState(false);
+    const [visited , setUnvisted] = useState([]);
 
+    let arr = [];
     const activeQuestion = (id) => {
-        setDeactive(id === active ? null : id);
+        setClose(id === open ? false : id);
+
+        if(visited.includes(id)){
+            setUnvisted(visited.filter((item)=> item !== id));
+        }
+        else{
+            setUnvisted([...visited , id]);
+        }
+
     }
+
 
 
     return (
@@ -389,7 +395,7 @@ const Html = () => {
                                                 <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
                                                 {
-                                                    active === val.id &&
+                                                    visited.includes(val.id) &&
                                                     <ul className='col-sm-10 col-12 m-auto py-sm-3 py-2'>
                                                         {
                                                             val.answer.map((v, index) => {
