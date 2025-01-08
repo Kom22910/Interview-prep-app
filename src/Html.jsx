@@ -385,7 +385,7 @@ const Html = () => {
                                     return (
                                         <div className="col-12 card1 mb-5 py-sm-2 py-3" key={val.id} onClick={() => activeQuestion(val.id)}>
 
-                                            <div className="col-11 m-auto" >
+                                            <div className="col-sm-11 col-12 m-auto" >
                                                 <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
                                                 {
