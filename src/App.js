@@ -9,6 +9,7 @@ import CssPage from './CssPage';
 import Javascript from './Javascript';
 import MongoDB from './MongoDB';
 import NodeQuestion from './NodeQusetion';
+import Express from './Express';
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/js' element={<Javascript/>} />
           <Route path='/mongodb' element={<MongoDB/>} />
           <Route path='/node' element={<NodeQuestion/>} />
+          <Route path='/express' element={<Express/>} />
           
         </Routes>
       </Router>

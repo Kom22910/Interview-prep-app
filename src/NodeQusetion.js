@@ -13,75 +13,75 @@ const NodeQuestion = () => {
             id: 1,
             question: "What is Node Js ?",
             answer: [
-                "Node.js is a open source ,JavaScript runtime environment",
-                "built on Chrome's V8 JavaScript engine ",
-                "It allows developers to execute JavaScript code outside the browser",
-                "It gives ability to run JavaScript on the server",
-                "Node Js is Asynchronous Programming",
-                ''
+                "1] Node.js is a open source ,JavaScript runtime environment",
+                "2] built on Chrome's V8 JavaScript engine ",
+                "3] It allows developers to execute JavaScript code outside the browser",
+                "4] It gives ability to run JavaScript on the server",
+                "5] Node Js is Asynchronous Programming",
+                "6] Node.js is designed to build scalable network applications"
             ]
         },
         {
-            id : 2,
+            id: 2,
             question: "Key Feature of NodeJS?",
-            answer : [
-                "Node Js is Asynchronous Programming ",
+            answer: [
+                "# Node Js is Asynchronous Programming ",
                 "1] Non-blocking I/O =>  handling of concurrent requests.",
                 "2] Event-driven architecture => allows Node.js to process multiple connections efficiently by triggering callbacks when an event occurs",
                 "3] Node js runs on a single thread despite being asynchronous, it uses an event loop to handle requests."
             ]
         },
         {
-            id : 3,
+            id: 3,
             question: "What can Node JS do ?",
-            answer : [
-                "Node.js can generate dynamic page content",
-                "It can create, open, read, write, delete, and close files on the server",
-                "Node.js can collect form data",
-                "It can add, delete, modify data in your database"
+            answer: [
+                "1] Node.js can generate dynamic page content",
+                "2] It can create, open, read, write, delete, and close files on the server",
+                "3] Node.js can collect form data",
+                "4] It can add, delete, modify data in your database"
             ]
         },
         {
-            id : 4,
-            question : "What is a Module in Node.js?",
-            answer : [
-                "Modules in Node.js are like JavaScript libraries",
-                "Module is Building block that can reused within the application",
-                "Module is a self-contained unit of code that provides a specific functionality",
-                "modules can include functions, objects, and variables that are exported from the code files.",
-                "It is a set of functions ",
-                "Node.js modules are key to organizing your code in manageable chunks. "
+            id: 4,
+            question: "What is a Module in Node.js?",
+            answer: [
+                "1] Modules in Node.js are like JavaScript libraries",
+                "2] Module is Building block that can reused within the application",
+                "3] Module is a self-contained unit of code that provides a specific functionality",
+                "4] Modules can include functions, objects, and variables that are exported from the code files.",
+                "5] It is a set of functions ",
+                "6] Node.js modules are key to organizing your code in manageable chunks. "
             ]
         },
         {
-            id : 5,
-            question : 'What are the different types of Module ?',
-            answer : [
+            id: 5,
+            question: 'What are the different types of Module ?',
+            answer: [
                 "1] Core Module ==> ",
-                " They are built-in modules that come bundled with the Node.js installation.",
-                " Examples: fs, http, path, os, url, crypto.",
+                "        They are built-in modules that come bundled with the Node.js installation.",
+                "        Examples: fs, http, path, os, url, crypto.",
                 "2] Local Module ==> ",
-                "  These are modules that you create within your own project.",
-                " they reside same directory or subdirectories of your main JavaScript file.",
+                "        These are modules that you create within your own project.",
+                "        they reside same directory or subdirectories of your main JavaScript file.",
                 "3] Third Party Module ==>",
-                " hese are modules developed by the community and published on npm (Node Package Manager).",
-                "They offer a wide range of functionalities",
+                "       These are modules developed by the community and published on npm (Node Package Manager).",
+                "       They offer a wide range of functionalities",
             ]
         },
         {
-            id : 5,
-            question : "How Node.js Modules Work?",
-            answer : [
+            id: 6,
+            question: "How Node.js Modules Work?",
+            answer: [
                 "Node.js module is an object that contains the following key properties:",
-                "1] module ==> he object that represents the current module.",
-                "2] module.exports ==> use to export module like react component ",
+                "1] module ==>                  he object that represents the current module.",
+                "2] module.exports ==>          use to export module like react component ",
                 "3] require('module_name') ==>  used to import modules into other modules. "
             ]
         },
         {
-            id : 6,
-            question : "What are the Datatypes in Node.js ?",
-            answer : [
+            id: 7,
+            question: "What are the Datatypes in Node.js ?",
+            answer: [
                 "1] Boolean",
                 "2] Undefined",
                 "3] Null",
@@ -90,68 +90,68 @@ const NodeQuestion = () => {
             ]
         },
         {
-            id : 7,
-            question : "What is Loose typing ?",
-            answer : [
-                "Node.js supports loose typing",
-                "Means you don’t need to specify what type of information will be stored in a variable in advance."
+            id: 8,
+            question: "What is Loose typing ?",
+            answer: [
+                "# Node.js supports loose typing",
+                "# Means you don't need to specify what type of information will be stored in a variable in advance."
             ]
         },
         {
-            id : 8,
+            id: 9,
             question: "What is Buffer in Node JS ?",
-            answer : [
-                "Buffer is Data type to store binary data",
-                "It is useful when we are reading data from files or receiving packets over the network."
+            answer: [
+                "1] Buffer is Data type to store binary data",
+                "2] It is useful when we are reading data from files or receiving packets over the network."
             ]
         },
         {
-            id : 9,
-            question : "What are the Core modules ?",
-            answer : [
-                "1] http ==> creates an HTTP server",
-                "2] url ==> module provides utilites for URL resolution and parsing ",
-                "3] path ==> manipulate file paths",
-                "4] events ==> Implement custom event handling",
-                "5] assert ==> set of assertion functions useful for testing",
-                "6] fs ==> used to handle file system",
-                "7] process ==> provides info and controls about current nodejs process",
-                "8] os ==>  provide info about operation system",
+            id: 10,
+            question: "What are the Core modules ?",
+            answer: [
+                "1] http    ==>     creates an HTTP server",
+                "2] url     ==>     module provides utilites for URL resolution and parsing ",
+                "3] path    ==>     manipulate file paths",
+                "4] events  ==>     Implement custom event handling",
+                "5] assert  ==>     set of assertion functions useful for testing",
+                "6] fs      ==>     used to handle file system",
+                "7] process ==>     provides info and controls about current nodejs process",
+                "8] os      ==>     provide info about operation system",
             ]
         },
         {
-            id : 10,
-            question : "What is HTTP Module ?",
-            answer : [
-                "HTTP Modules provides functionality to create and manage HTTP servers and clients.",
-                "It includes methods to handle incoming requests, send responses, and interact with HTTP headers and status codes. ",
-                "It can be used as the backbone for web servers",
-                "higher-level frameworks like Express.js to simplify this process"
+            id: 11,
+            question: "What is HTTP Module ?",
+            answer: [
+                "1] HTTP Modules provides functionality to create and manage HTTP servers and clients.",
+                "2] It includes methods to handle incoming requests, send responses, and interact with HTTP headers and status codes. ",
+                "3] It can be used as the backbone for web servers",
+                "4] higher-level frameworks like Express.js to simplify this process"
             ]
         },
         {
-            id : 11,
-            question : "Create a HTTP Server and print 'Hello world' ?",
-            answer : [
+            id: 12,
+            question: "Create a HTTP Server and print 'Hello world' ?",
+            answer: [
                 "1] import http module : ",
-                " const http = require('http') ",
+                "           const http = require('http') ",
                 "2] declaring (hostname: 127.0.0.1) and (port:8000) : ",
-                " const hostname = '127.0.0.1' ; ",
-                " const port = '8000' ",
-                "3] creating server using http.createServer((request , response)) : ",
-                " here request object ==> Contains information about the incoming HTTP request (method, headers, URL, etc.)." ,
-                " response object ==>  Provides methods for sending the HTTP response back to the client. ",
-                " const server =http.createServer((req , res)=>{",
-                "   res.statusCode = 200;",
-                "   res.setHeader('Content-Type' , 'text/html');",
-                "   res.end('<h1>Hello word</h1>');",
-                "  })",
+                "           const hostname = '127.0.0.1' ; ",
+                "           const port = '8000' ",
+                "3] creating server using : http.createServer((request , response)) : ",
+                "  // here request object ==> Contains information about the incoming HTTP request (method, headers, URL, etc.).",
+                "  // response object ==>  Provides methods for sending the HTTP response back to the client. ",
+                "       const server =http.createServer((req , res)=>{",
+                "         res.statusCode = 200;",
+                "         res.setHeader('Content-Type' , 'text/html');",
+                "         res.end('<h1>Hello word</h1>');",
+                "       })",
                 "4] now server is ready and next step is to use server.listen(hostname , port)",
-                "server.listen(hostname , port )",
-                " It is to initiate the server's listening process on a specified port and network interface",
-                " Once called, the server actively waits for incoming HTTP requests from clients.",
-                " port ==> connection endpoint that directs data to a service",
-                " hostname ==> human readable domain name assigned to a host computer"
+                "           server.listen(hostname , port )",
+                "      //It is to initiate the server's listening process on a specified port and network interface",
+                "      //Once called, the server actively waits for incoming HTTP requests from clients.",
+                " # port ==> connection endpoint that directs data to a service",
+                " # hostname ==> human readable domain name assigned to a host computer"
             ]
         }
     ]
@@ -201,7 +201,11 @@ const NodeQuestion = () => {
                                                         {
                                                             val.answer.map((v, index) => {
                                                                 return (
-                                                                    <li key={index}>{v}</li>
+                                                                    <li key={index}>
+                                                                        <pre>
+                                                                            {v}
+                                                                        </pre>
+                                                                    </li>
                                                                 )
                                                             })
                                                         }

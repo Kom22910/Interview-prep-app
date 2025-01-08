@@ -11,93 +11,93 @@ const Html = () => {
             id: 1,
             question: "What is HTML ?",
             answer: [
-                "HTML stands for Hyper Text Markup Language",
-                "HTML is the standard markup language for creating Web pages",
-                "It was developed by Tim Berners-Lee",
-                "The markup language is used to define the text document within the tag which defines the structure of web pages",
-                "HTML is used to structure the website and is therefore used for Web Development"
+                "#  HTML stands for Hyper Text Markup Language",
+                "#  HTML is the standard markup language for creating Web pages",
+                "#  It was developed by Tim Berners-Lee",
+                "#  The markup language is used to define the text document within the tag which defines the structure of web pages",
+                "#  HTML is used to structure the website and is therefore used for Web Development"
             ]
         },
         {
             id: 2,
             question: "What are the various markup languages available ?",
             answer: [
-                "HTML: Hypertext Markup Language",
-                "MathML: Mathematical Markup Language",
-                "SGML: Standard Generalized Markup Language",
-                "XHTML: eXtensible Hypertext Markup Language",
-                "XML: eXtensible Markup Language"
+                "# HTML     :   Hypertext Markup Language",
+                "# MathML   :   Mathematical Markup Language",
+                "# SGML     :   Standard Generalized Markup Language",
+                "# XHTML    :   eXtensible Hypertext Markup Language",
+                "# XML      :   eXtensible Markup Language"
             ]
         },
         {
             id: 3,
             question: "What is the current version of HTML?",
             answer: [
-                "The current version of HTML is HTML5, which is the fifth and latest version of HTML.",
-                "HTML5 supports multimedia elements such as audio and video without the need for external plugins, improved semantic markup, better handling of forms, and enhanced features for designing responsive and accessible web applications."
+                "# The current version of HTML is HTML5, which is the fifth and latest version of HTML.",
+                "#  HTML5 supports multimedia elements such as ==> \naudio and video without the need for external plugins, improved semantic markup, better handling of forms, and enhanced features for designing responsive and accessible web applications."
             ]
         },
         {
             id: 4,
             question: "What is !DOCTYPE?",
             answer: [
-                "The doctype is not an element or tag",
-                "it lets the browser know about the version of or standard of HTML ",
-                "The DOCTYPE for HTML5 is case-insensitive",
-                "written as :: <!DOCTYPE html>"
+                "# The doctype is not an element or tag",
+                "# it lets the browser know about the version of or standard of HTML ",
+                "# The DOCTYPE for HTML5 is case-insensitive",
+                "    written as :: <!DOCTYPE html>"
             ]
         },
         {
             id: 5,
             question: "What are elements and tags, and what are the differences between them?",
             answer: [
-                "Tags are the starting and ending parts of an HTML element.",
-                "Eg Tags :: <b> </b> <i> </i> ",
-                "Elements enclose the contents in between the tags.",
-                "Eg element : <b>This is the content.</b>"
+                "# Tags are the starting and ending parts of an HTML element.",
+                "       Eg Tags :: <b> </b> <i> </i> ",
+                "\n# Elements enclose the contents in between the tags.",
+                "       Eg element : <b>This is the content.</b>"
             ]
         },
         {
             id: 6,
             question: "What are the various heading tags and their importance?",
             answer: [
-                "There are 6 levels of headings defined by HTML ===> h1 (biggest) to h6 (smallest)",
-                "Importance of Heading: ",
-                " 1)  Search Engines use headings for indexing the structure and content of the webpage. ",
-                " 2)  Headings are used for highlighting important topics. ",
-                " 3)  They provide valuable information and tell us about the structure of the document."
+                "//  There are 6 levels of headings defined by HTML ===> h1 (biggest) to h6 (smallest)",
+                "\n# Importance of Heading: ",
+                "           ->  Search Engines use headings for indexing the structure and content of the webpage. ",
+                "           ->  Headings are used for highlighting important topics. ",
+                "           ->  They provide valuable information and tell us about the structure of the document."
             ]
         },
         {
             id: 7,
             question: "How to redirect to a particular section of a page using HTML?",
             answer: [
-                "The anchor tag to redirect to a particular section on the same page.",
-                " add “id attribute” to the section that you want to show and use the same id in href attribute with “#”",
-                " <a href='#contact'> Go Contact section </a>",
-                " <section id='contact'> Contact section <section/>"
+                "// The anchor tag to redirect to a particular section on the same page.",
+                "//  add “id attribute” to the section that you want to show and use the same id in href attribute with “#”",
+                "           <a href='#contact'> Go Contact section </a>",
+                "           <section id='contact'> Contact section <section/>"
             ]
         },
         {
             id: 8,
             question: "What are attributes?",
             answer: [
-                "Attributes provide additional information about an element.",
-                " It takes 2 parameters ie., name and value.",
-                " placed inside the opening tag of the element.",
-                " Every name has some value that must be written within quotes."
+                "#   Attributes provide additional information about an element.",
+                "#   It takes 2 parameters ie., name and value.",
+                "#   placed inside the opening tag of the element.",
+                "#   Every name has some value that must be written within quotes."
             ]
         },
         {
             id: 9,
             question: "Are <b> and <strong> tags same? If not, then why?",
             answer: [
-                "Bold tag ==>  ",
-                " 1) Primarily for visual styling.",
-                " 2) Tells the browser to display the text in bold.",
-                "Strong tag ==>  ",
-                " 1) Used to emphasize the importance of the text.",
-                " 2) Conveys semantic meaning to both users and search engines."
+                "# Bold tag ==>  ",
+                "       ->  Primarily for visual styling.",
+                "       ->  Tells the browser to display the text in bold.",
+                "\n# Strong tag ==>  ",
+                "       ->   Used to emphasize the importance of the text.",
+                "       ->   Conveys semantic meaning to both users and search engines."
 
             ]
         },
@@ -105,13 +105,13 @@ const Html = () => {
             id: 10,
             question: "What is the difference between <em> and <i> tags?",
             answer: [
-                "Italic tag ==> ",
-                " 1) It is used in formatting HTML texts.",
-                " 2) It is used to define a text in technical terms, alternative mood or voice, a thought, etc.",
-                "Emphasis tag ==> ",
-                " 1) Used to emphasize the importance of the text.",
-                " 2) Conveys semantic meaning to both users and search engines.",
-                " 3) It is used to define emphasized text or statements."
+                "# Italic tag ==> ",
+                "       ->  It is used in formatting HTML texts.",
+                "       ->  It is used to define a text in technical terms, alternative mood or voice, a thought, etc.",
+                "# Emphasis tag ==> ",
+                "       ->  Used to emphasize the importance of the text.",
+                "       ->  Conveys semantic meaning to both users and search engines.",
+                "       ->  It is used to define emphasized text or statements."
 
             ]
         },
@@ -119,46 +119,46 @@ const Html = () => {
             id: 11,
             question: "What is comments ?",
             answer: [
-                "Comments are not displayed in the browsers. ",
-                "It helps the developers to understand your code",
-                "in html it written as :: <!- comments ->"
+                "// Comments are not displayed in the browsers. ",
+                "// It helps the developers to understand your code",
+                "       in html it written as :: <!- comments ->"
             ]
         },
         {
             id: 12,
             question: "What is the use of the target attribute in the <a> tag ?",
             answer: [
-                " Target attribute specify the window where the linked document is loaded.",
-                "Attribute value ==> ",
-                "_blank: It opens the link in a new window.",
-                "_self: It opens the linked document in the same frame.",
-                "_parent: It opens the linked document in the parent frameset.",
-                "_top: It opens the linked document in the full body of the window.",
-                "framename: It opens the linked document in the named frame."
+                "// Target attribute specify the window where the linked document is loaded.",
+                "\n// Target Attribute value ==> ",
+                "           ->  _blank  =>  It opens the link in a new window.",
+                "           ->  _self   => It opens the linked document in the same frame.",
+                "           ->  _parent => It opens the linked document in the parent frameset.",
+                "           ->  _top    => It opens the linked document in the full body of the window.",
+                "           ->  framename=> It opens the linked document in the named frame."
             ]
         },
         {
             id: 13,
             question: "What is the use of alt attribute in images?",
             answer: [
-                "Alt attribute specify alternative text for image .",
-                "It is useful when the image is not displayed."
+                "// Alt attribute specify alternative text for image .",
+                "// It is useful when the image is not displayed."
             ]
         },
         {
             id: 14,
             question: "What are the HTML tags used to display a table?",
             answer: [
-                "<table>: It is used to define a table.",
-                "<tr>: It is used to define a row in a table.",
-                "<th>: It is used to define a header cell in a table.",
-                "<td>: It is used to define a cell in a table.",
-                "<colgroup>: It is used to define a group of one or more columns in a table for formatting.",
-                "<tbody>: It is used to define a group of body content in a table.",
-                "<thead>: It is used to group the header content in a table.",
-                "<tfooter>: It is used to group the footer content in a table.",
-                "<colspan> : Merges multiple columns into a single, wider cell. ",
-                "<rowspan> : Merges multiple rows into a single, taller cell."
+                "#   <table>: It is used to define a table.",
+                "#   <tr>: It is used to define a row in a table.",
+                "#   <th>: It is used to define a header cell in a table.",
+                "#   <td>: It is used to define a cell in a table.",
+                "#   <colgroup>: It is used to define a group of one or more columns in a table for formatting.",
+                "#   <tbody>: It is used to define a group of body content in a table.",
+                "#   <thead>: It is used to group the header content in a table.",
+                "#   <tfooter>: It is used to group the footer content in a table.",
+                "#   <colspan> : Merges multiple columns into a single, wider cell. ",
+                "#   <rowspan> : Merges multiple rows into a single, taller cell."
             ]
         },
         {
@@ -394,7 +394,11 @@ const Html = () => {
                                                         {
                                                             val.answer.map((v, index) => {
                                                                 return (
-                                                                    <li key={index}>{v}</li>
+                                                                    <li key={index}>
+                                                                        <pre>
+                                                                            {v}
+                                                                        </pre>
+                                                                    </li>
                                                                 )
                                                             })
                                                         }
