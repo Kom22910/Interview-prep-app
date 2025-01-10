@@ -350,12 +350,8 @@ const Html = () => {
         }
     ]
 
-    const [open, setClose] = useState(false);
     const [visited , setUnvisted] = useState([]);
-
-    let arr = [];
     const activeQuestion = (id) => {
-        setClose(id === open ? false : id);
 
         if(visited.includes(id)){
             setUnvisted(visited.filter((item)=> item !== id));

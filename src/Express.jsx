@@ -25,16 +25,16 @@ const Express = () => {
             question: "What are the main feature of Express.js ?",
             answer: [
                 "1] Web Applications ==> ",
-                "           Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
-                "2] APIs ==> ",
-                "           With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.",
-                "           here -Http Utlitly means --> pre-build functions that handles https common tasks like get , post , patch , delete , put, etc",
-                "                - Middleware --> These are pieces of code that can intercept and modify requests or responses within your API.",
-                "3] Performance ==> Express provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.",
-                "means -Express.js is built on top of Node.js",
-                "      - it doesn't try to hide or replace core Node.js features.",
-                "      - You can still directly use Node.js's built-in modules or libraries alongside Express.js.",
-                "4] Middleware ==> ",
+                "       Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+                "\n2] APIs ==> ",
+                "       With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.",
+                "       here  # Http Utlitly means --> pre-build functions that handles https common tasks like get , post , patch , delete , put, etc",
+                "             # Middleware --> These are pieces of code that can intercept and modify requests or responses within your API.",
+                "\n3] Performance ==> Express provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.",
+                "       means -Express.js is built on top of Node.js",
+                "           # it doesn't try to hide or replace core Node.js features.",
+                "           # You can still directly use Node.js's built-in modules or libraries alongside Express.js.",
+                "\n4] Middleware ==> ",
                 "           Express is a lightweight and flexible routing framework with minimal core features meant to be augmented through the use of Express middleware modules."
             ]
         },
@@ -65,12 +65,12 @@ const Express = () => {
                 "1] REST = Representational State Transfer",
                 "2] It is an API(Application Programming Interface) that uses the REST architectural style",
                 "3] This is a way to design APIs that use common web tech's to access and use data",
-                "4] Working ==> ",
-                "           4.1] RESTful APIs use HTTP request to access data",
-                "              - they support common operation like PUT ,PATCH , GET , DELETE",
-                "           4.2] This operation allow to perform CRUD (Create , Read , Update & Delete) on data",
-                "              - we uses RestFul Api because ==> easy, faster , lightweight , more scalable & less bandwidth",
-                "# Bandwidht ==> amount of data that can be transmitted over a network connection within a given amount of time."
+                "\n4] Working ==> ",
+                "      4.1] RESTful APIs use HTTP request to access data",
+                "         # they support common operation like PUT ,PATCH , GET , DELETE",
+                "\n      4.2] This operation allow to perform CRUD (Create , Read , Update & Delete) on data",
+                "         # we uses RestFul Api because ==> easy, faster , lightweight , more scalable & less bandwidth",
+                "\n# Bandwidht ==> amount of data that can be transmitted over a network connection within a given amount of time."
             ]
         },
         {
@@ -78,8 +78,8 @@ const Express = () => {
             question: "How to install Express ?",
             answer: [
                 "1] npm init -y ==>            it initalises and provide entry point and package.json ",
-                "2] npm i express ==>          it will download express package",
-                "3] npm --version express ==>  it will give version of express if successfully downloaded in system"
+                "\n2] npm i express ==>          it will download express package",
+                "\n3] npm --version express ==>  it will give version of express if successfully downloaded in system"
             ]
         },
         {
@@ -87,17 +87,17 @@ const Express = () => {
             question: "How to write 'Hello World' using Express.js",
             answer: [
                 "1] Import express in code and define port : ",
-                "       const express = require('express');",
-                "       const PORT = 8000 ;",
-                "2] Assign express to a varible :",
-                "       const app = express(); ",
-                "3] get and send message 'Hello world' :",
-                "       app.get('/' , (req , res)=>{",
-                "           res.send('Hello world')",
+                "       $ const express = require('express');",
+                "       $ const PORT = 8000 ;",
+                "\n2] Assign express to a varible :",
+                "       $ const app = express(); ",
+                "\n3] get and send message 'Hello world' :",
+                "       $ app.get('/' , (req , res)=>{",
+                "            res.send('Hello world')",
                 "         });",
-                "4] now listen the port : ",
-                "       app.listen(PORT , ()=>{  console.log('Server is running on http://localhost:${PORT}');})",
-                "5] Done now just open the link"
+                "\n4] now listen the port : ",
+                "       $ app.listen(PORT , ()=>{  console.log('Server is running on http://localhost:${PORT}');})",
+                "\n5] Hurray !!! Done now just open the link"
             ]
         },
         {
@@ -105,26 +105,41 @@ const Express = () => {
             question: "Just create a four route (Home , Service , contact , Blog) using express ?",
             answer: [
                 "1] First route (Home ) ==>  ",
-                "                            app.listen('/home' , (res , req)=>{ ",
-                "                               res.status(200)",
-                "                               res.send('Hello you are in Home page')",
-                "                            });",
-                "2] Second Route (Service) ==>",
-                "                            app.listen('/service' , (res , req)=>{ ",
-                "                               res.status(200)",
-                "                               res.send('Hello you are in Service page')",
-                "                            });",
-                "3] Third Route (Contact) ==>",
-                "                            app.listen('/contact' , (res , req)=>{ ",
-                "                               res.status(200)",
-                "                               res.send('Hello you are in Contact page')",
-                "                            });",
-                "4]Fourth Route (Blog) ==>",
-                "                            app.listen('/blog' , (res , req)=>{ ",
-                "                               res.status(200)",
-                "                               res.send('Hello you are in Blog page')",
-                "                            });",
+                "           $ app.listen('/home' , (res , req)=>{ ",
+                "               res.status(200)",
+                "               res.send('Hello you are in Home page')",
+                "            });",
+                "\n2] Second Route (Service) ==>",
+                "            $ app.listen('/service' , (res , req)=>{ ",
+                "                res.status(200)",
+                "                res.send('Hello you are in Service page')",
+                "             });",
+                "\n3] Third Route (Contact) ==>",
+                "             $ app.listen('/contact' , (res , req)=>{ ",
+                "                  res.status(200)",
+                "                  res.send('Hello you are in Contact page')",
+                "               });",
+                "\n4] Fourth Route (Blog) ==>",
+                "              $ app.listen('/blog' , (res , req)=>{ ",
+                "                  res.status(200)",
+                "                  res.send('Hello you are in Blog page')",
+                "               });",
 
+            ]
+        },
+        {
+            id : 9 ,
+            question : "Insert json file while status code 200 ?",
+            answer : [
+                "-> response.status(200).json({ key : [] }) ",
+                "\nEg : $ app.get('/getData' , aysnc( request , response )=>{",
+                "       try{",
+                "            response.status(200).json({ message : 'Inserting data ' , data : [] })",
+                "         }",
+                "        catch(err)=>{  ",
+                "              response.status(500).json( {message : err} ) ;",
+                "         }",
+                "   }) ;"
             ]
         }
 
@@ -135,12 +150,17 @@ const Express = () => {
 
 
 
-    const [active, setDeactive] = useState(null);
-
+    const [visited, setUnvisted] = useState([]);
     const activeQuestion = (id) => {
-        setDeactive(id === active ? null : id);
-    }
 
+        if (visited.includes(id)) {
+            setUnvisted(visited.filter((item) => item !== id));
+        }
+        else {
+            setUnvisted([...visited, id]);
+        }
+
+    }
 
 
 
@@ -151,7 +171,7 @@ const Express = () => {
             {/* <Navbar /> */}
 
             <div className="container-fluid p-0 html py-sm-5 py-4">
-                <h3 className='text-center fw-bold' >Express JS Questions & Answer</h3>
+                <h3 className='text-center fw-bold' >Express.js (Third party Module) in node.js Questions & Answer</h3>
 
                 <div className="row">
 
@@ -170,7 +190,7 @@ const Express = () => {
                                                 <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
                                                 {
-                                                    active === val.id &&
+                                                    visited.includes(val.id) &&
                                                     <ul className='col-sm-10 col-12 m-auto py-3 pb-sm-5'>
                                                         {
                                                             val.answer.map((v, index) => {

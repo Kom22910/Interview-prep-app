@@ -58,6 +58,12 @@ const Subject = () => {
                                 <img src="asset/express.png" alt="" className='d-block w-25' />
                             </div>
 
+
+                            {/* subject 7 */}
+                            <div className=" col-sm-3 col-5 box" onClick={() => nav('/mongoose')}>
+                                <img src="asset/mongoose.png" alt="" className='d-block w-50' />
+                            </div>
+
                         </div>
                     </div>
 

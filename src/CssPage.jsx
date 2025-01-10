@@ -486,11 +486,17 @@ const CssPage = () => {
   ]
 
 
-  const [active, setDeactive] = useState(null);
-
-  const activeQuestion = (id) => {
-    setDeactive(id === active ? null : id);
-  }
+   const [visited , setUnvisted] = useState([]);
+      const activeQuestion = (id) => {
+  
+          if(visited.includes(id)){
+              setUnvisted(visited.filter((item)=> item !== id));
+          }
+          else{
+              setUnvisted([...visited , id]);
+          }
+  
+      }
 
 
 
@@ -523,7 +529,7 @@ const CssPage = () => {
                         <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
                         {
-                          active === val.id &&
+                          visited.includes(val.id) &&
                           <ul className='col-sm-11 col-12 m-auto py-3 pb-sm-5'>
                             {
                               val.answer.map((v, index) => {

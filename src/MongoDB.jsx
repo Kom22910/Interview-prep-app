@@ -77,7 +77,7 @@ const MongoDB = () => {
             question: " Name Restriction for Database in MongoDB ? ",
             answer: [
                 " 1] Names of database are case insensitive",
-                " 2] db name cannnot contain any of these character ==>  / \ . ' $ * : | ?",
+                " 2] db name cannnot contain any of these character ==>  /  . ' $ * : | ?",
                 " 3] db names cannot contain null character or empty ",
                 " 4] db names must contain less than 64 character"
             ]
@@ -437,10 +437,18 @@ const MongoDB = () => {
 
 
 
-    const [active, setDeactive] = useState(null);
-
+    const [visited, setUnvisted] = useState([]);
     const activeQuestion = (id) => {
-        setDeactive(id === active ? null : id);
+
+        if (visited.includes(id)) {
+            setUnvisted(visited.filter((item) => {
+                return item !== id}
+            ));
+        }
+        else {
+            setUnvisted([...visited , id]);
+        }
+
     }
 
 
@@ -471,8 +479,9 @@ const MongoDB = () => {
                                             <div className="col-11 m-auto" >
                                                 <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
+
                                                 {
-                                                    active === val.id &&
+                                                    visited.includes(val.id) &&
                                                     <ul className='col-sm-10 col-12 m-auto py-3 pb-sm-5'>
                                                         {
                                                             val.answer.map((v, index) => {
