@@ -141,6 +141,26 @@ const Express = () => {
                 "         }",
                 "   }) ;"
             ]
+        },
+        {
+            id : 10,
+            question : "How to post data using Express and mongoose ?",
+            answer : [
+                "using ->  app.post()",
+                "\neg : \n$ app.post('/postdata' , aysnc (request , response) =>{",
+                "       try{",
+                "           const productData = new CreatedModel( request.body )",
+                "           const saveData = productData.save(); ",
+                "           response.status(201).json({ msg : 'Added succesfully !!' ,  data : saveData}) ",
+                "          } ",
+                "        catch(err)=>{ ",
+                "           response.status(500).json({ msg : 'Error while Added data !!' , error : err}) ",
+                "          }",
+                " })",
+                "\n but data we are putting we be in json format but in mongoDB the data is in BSON so this will give error ",
+                "\n solution --> use middleware which is --> app.use(express.json())",
+                "It will convert json data in BSON and BSON to JSON"
+            ]
         }
 
     ]

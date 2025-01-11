@@ -494,7 +494,7 @@ const Javascript = () => {
                                                 <h4 className='text-center py-sm-3 py-0'>{val.question}</h4>
 
                                                 {
-                                                    visited.filter(val.id) &&
+                                                    visited.includes(val.id) &&
                                                     <ul className='col-sm-10 col-12 m-auto py-3 pb-sm-5'>
                                                         {
                                                             val.answer.map((v, index) => {
