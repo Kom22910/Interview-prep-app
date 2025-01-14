@@ -153,6 +153,52 @@ const NodeQuestion = () => {
                 " # port ==> connection endpoint that directs data to a service",
                 " # hostname ==> human readable domain name assigned to a host computer"
             ]
+        },
+        {
+            id : 13 ,
+            question : "What is MVC ?",
+            answer : [
+                "M ( Model ) --> ",
+                "      # Model represents the structure of data, the format and the constraints with which it is stored.",
+                "      # It maintains the data of the application",
+                "      # Essentially, it is the database part of the application.",
+                "\nV ( view ) -->",
+                "      # View is what is presented to the user. ",
+                "      # Basically Frontend which utilize the Model and present data",
+                "      # the user interacts with the View, which in turn generates the appropriate request",
+                "\nC ( Controller ) --> ",
+                "      # Controller controls the requests of the user and then generates appropriate response which is fed to the viewer.",
+                "      # the user interacts with the View, which in turn generates the appropriate request, this request will be handled by a controller.",
+                "      # The controller renders the appropriate view with the model data as a response."
+            ]
+        },
+        {
+            id : 14,
+            question : "How to Create Folder Structure in Backends and its contents ?",
+            answer : [
+                "// folder -- and it's content and meaning",
+                "\n1]  config --> It contains file which connect the database ",
+                "           # db.js --> which contain connection of database",
+                "\n2] Model --> It contains file which contains Database / Model / Schema / Structure",
+                "           # Eg : Book.js",
+                "\n3] Controller --> It contains file which contain Functions on Model/Database ",
+                "           # Eg : BookController.js",
+                "\n4] Route --> It contains file which contains Operation Like (Get , PUT , DELETE , UPDATE)& routes And its Controller",
+                "           # Eg : BookRouter.js",
+                "\n5] Server.js --> Main file which in which server is there and utlilize all files in this , SERVER"
+            ]
+        },
+        {
+            id : 15 ,
+            question : "If I want to use import export so how to Do it ?",
+            answer : [
+                "Step 1 :  Go to Package.json",
+                "\nStep 2 : After the Server.js -> on next line write ",
+                "\nStep 3 : 'type' : 'module' ",
+                "\n// Then to import package just write --> import AnyName from 'PackageName' ",
+                "\n// Then to export one main function  --> export default FunctionName ",
+                "To export multiple function -->  export { function1 , fucntion2 }"
+            ]
         }
     ]
 

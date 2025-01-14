@@ -96,7 +96,7 @@ const Express = () => {
                 "            res.send('Hello world')",
                 "         });",
                 "\n4] now listen the port : ",
-                "       $ app.listen(PORT , ()=>{  console.log('Server is running on http://localhost:${PORT}');})",
+                "       $ app.listen(PORT , ()=>{ console.log('Server is running on http://localhost:${PORT}')})",
                 "\n5] Hurray !!! Done now just open the link"
             ]
         },
@@ -150,7 +150,7 @@ const Express = () => {
                 "\neg : \n$ app.post('/postdata' , aysnc (request , response) =>{",
                 "       try{",
                 "           const productData = new CreatedModel( request.body )",
-                "           const saveData = productData.save(); ",
+                "           const saveData = await productData.save(); ",
                 "           response.status(201).json({ msg : 'Added succesfully !!' ,  data : saveData}) ",
                 "          } ",
                 "        catch(err)=>{ ",
@@ -161,7 +161,123 @@ const Express = () => {
                 "\n solution --> use middleware which is --> app.use(express.json())",
                 "It will convert json data in BSON and BSON to JSON"
             ]
-        }
+        },
+        {
+            id : 11,
+            question : "How to get all Data from Database using express & mongoose ?",
+            answer : [
+                "using --> data.find()  , app.get()",
+                "\n Example : ",
+                "\n$ app.get('/books' , async(req , res)=>{",
+                "   try{",
+                "       const Alldata = await CreatedModel.find();",
+                "       res.status(200).json({",
+                "           'message' : 'Data retrive succesfully !!', ",
+                "           'data' : Alldata ",
+                "         })",
+                "   }",
+                "   catch(err){",
+                "       res.status(500).json({",
+                "           'message' : 'Error while getting data' , 'Error' : err ",
+                "       })",
+                "   }",
+                "});"
+            ]
+
+        },
+        {
+            id : 12,
+            question : "How to post Data on Database using express & mongoose ?",
+            answer : [
+                "using --> app.post()",
+                "\n Example : ",
+                "\n$ app.post('/books' , async(req , res)=>{",
+                "   try{",
+                "       const Alldata = new CreatedModelname(req.body);",
+                "       const savedata = await Alldata.save() ;",
+                "       res.status(201).json({",
+                "           'message' : 'Data retrive succesfully !!', ",
+                "           'data' : savedata ",
+                "         })",
+                "   }",
+                "   catch(err){",
+                "       res.status(500).json({",
+                "           'message' : 'Error while getting data' , 'Error' : err ",
+                "       })",
+                "   }",
+                "});"
+            ]
+
+        },
+        {
+            id : 13,
+            question : "How to retrive Data of specific ID from DB using express & mongoose ?",
+            answer : [
+                "using --> app.get() , findById () ",
+                "\n Example : ",
+                "\n$ app.get('/books' , async(req , res)=>{",
+                "   try{",
+                "       const Alldata = await CreatedModelname.findById(req.params.id);",
+                "       res.status(201).json({",
+                "           'message' : 'Data retrive succesfully !!', ",
+                "           'data' : Alldata ",
+                "         })",
+                "   }",
+                "   catch(err){",
+                "       res.status(500).json({",
+                "           'message' : 'Error while getting data' , 'Error' : err ",
+                "       })",
+                "   }",
+                "});"
+            ]
+
+        },
+        {
+            id : 14,
+            question : "How to update Data in DB using express & mongoose ?",
+            answer : [
+                "using --> app.put() , findByIdAndUpdate(id , body) ",
+                "\n Example : ",
+                "\n$ app.get('/books' , async(req , res)=>{",
+                "   try{",
+                "       const Alldata = await CreatedModelname.findByIdAndUpdate(req.params.id , req.body);",
+                "       const savedata = await Alldata.save() ;",
+                "       res.status(201).json({",
+                "           'message' : 'Data updated succesfully !!', ",
+                "           'data' : savedata ",
+                "         })",
+                "   }",
+                "   catch(err){",
+                "       res.status(500).json({",
+                "           'message' : 'Error while getting data' , 'Error' : err ",
+                "       })",
+                "   }",
+                "});"
+            ]
+
+        },
+        {
+            id : 15,
+            question : "How to delete Data in DB using express & mongoose ?",
+            answer : [
+                "using --> app.delete() , findByIdAndDelete(id) ",
+                "\n Example : ",
+                "\n$ app.get('/books' , async(req , res)=>{",
+                "   try{",
+                "       const Alldata = await CreatedModelname.findByIdAndDelete(req.params.id);",
+                "       res.status(201).json({",
+                "           'message' : 'Data deleted succesfully !!', ",
+                "         })",
+                "   }",
+                "   catch(err){",
+                "       res.status(500).json({",
+                "           'message' : 'Error while getting data' , 'Error' : err ",
+                "       })",
+                "   }",
+                "});"
+            ]
+
+        },
 
     ]
 
